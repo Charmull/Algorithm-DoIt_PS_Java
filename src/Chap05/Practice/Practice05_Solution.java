@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Practice04_Solution {
+public class Practice05_Solution {
     // 메소드 recur의 비재귀적 구현
     static void recur3(int n) {
         int[] nstk = new int[100];

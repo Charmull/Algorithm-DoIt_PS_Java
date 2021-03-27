@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Practice04 {
+public class Practice05 {
     static void recur3(int n) {
         IntStack s = new IntStack(100);
         while(true) {

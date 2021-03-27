@@ -8,12 +8,12 @@ public class Practice05 {
     private int[] que;			// 큐 본체
 
     // 실행 시 예외：큐가 비어 있음
-    public static class EmptyP05Exception extends RuntimeException {
+    public class EmptyP05Exception extends RuntimeException {
         public EmptyP05Exception() { }
     }
 
     // 실행 시 예외：큐가 가득 참
-    public static class OverflowP05Exception extends RuntimeException {
+    public class OverflowP05Exception extends RuntimeException {
         public OverflowP05Exception() { }
     }
 

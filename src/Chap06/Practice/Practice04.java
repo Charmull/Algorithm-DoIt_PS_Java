@@ -26,17 +26,17 @@ public class Practice04 {
         }
         System.out.println();
     }
-
+    
     // 버블 정렬(버전 3)
     static void bubbleSort(int[] a, int n) {
         int countCompare = 0;
         int countChange = 0;
-
+        
         int k = 0;								// a[k]보다 앞쪽은 정렬을 마친 상태
         int i = 0;
         while (k < n - 1) {
             System.out.printf("패스%d:\n", i+1);
-
+            
             int last = n - 1;					// 마지막으로 요소를 교환한 위치
             for (int j = n - 1; j > k; j--) {
                 if (a[j - 1] > a[j]) {
@@ -57,7 +57,6 @@ public class Practice04 {
             k = last;
             i++;
         }
-
         System.out.printf("비교를 %d회 했습니다.\n", countCompare);
         System.out.printf("교환을 %d회 했습니다.\n", countChange);
     }

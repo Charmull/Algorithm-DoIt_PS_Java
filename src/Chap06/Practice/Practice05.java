@@ -17,8 +17,10 @@ public class Practice05 {
         int i = 0;
         while (k < n - 1) {
             System.out.printf("패스%d:\n", i+1);
+
+            int last = n - 1;					// 마지막으로 요소를 교환한 위치
+
             if(i%2 == 0) {
-                int last = n - 1;					// 마지막으로 요소를 교환한 위치
                 for (int j = n - 1; j > k; j--) {
                     if (a[j - 1] > a[j]) {
                         swap(a, j - 1, j);
@@ -27,10 +29,8 @@ public class Practice05 {
                     }
                     countCompare++;
                 }
-                k = last;
             }
             else {
-                int last = n - 1;					// 마지막으로 요소를 교환한 위치
                 for (int j = k; j < n-1; j++) {
                     if (a[j] > a[j+1]) {
                         swap(a, j, j+1);
@@ -39,8 +39,9 @@ public class Practice05 {
                     }
                     countCompare++;
                 }
-                k = last;
             }
+
+            k = last;
 
             i++;
         }

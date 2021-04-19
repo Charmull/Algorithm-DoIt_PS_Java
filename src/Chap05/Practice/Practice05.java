@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// wrong answer
+// TODO : IntStack으로 풀어보기
 public class Practice05 {
     static void recur3(int n) {
         IntStack s = new IntStack(100);
